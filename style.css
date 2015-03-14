@@ -9,8 +9,15 @@
 	margin: 0 auto;
 }
 
+.shades-input:hover {
+	cursor: pointer;
+}
+
 .shades-title {
 	text-align: center;
+	font-size: 3em;
+  	margin-bottom: 30px;
+  	font-family: 'Helvetica';
 }
 
 .shades-box{
@@ -19,6 +26,7 @@
 
 .shades-counter {
   text-align: center;
+  font-family: 'Helvetica';
   position: relative;
   top: 45%;
   font-size: 32px;
