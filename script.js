@@ -1,11 +1,9 @@
 function shadesOfGrey(n) {
   var shades = [];
-  
   for (var i = 0; i <= Math.min(n, 256); i++) {
     var grey = ('0' + i.toString(16)).slice(-2);
     shades.push('#' + grey + grey + grey);
   }
-  
   return {
     firstColor : function(){
       return shades[0];
@@ -20,7 +18,7 @@ function shadesOfGrey(n) {
 var rangeSliderValue = $('.shades-input').val();
 
 var greyShades = shadesOfGrey(rangeSliderValue);
-$('.shades-counter').html('100');
+$('.shades-counter').html(rangeSliderValue);
 
 $(".shades-input").mousemove( function(e){
     
