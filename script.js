@@ -5,7 +5,7 @@ function shadesOfGrey(n) {
     var grey = ('0' + i.toString(16)).slice(-2);
     shades.push('#' + grey + grey + grey);
   }
-  console.log("Shades", shades);
+  
   return {
     firstColor : function(){
       return shades[0];
